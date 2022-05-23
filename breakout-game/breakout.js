@@ -280,7 +280,6 @@ function checkCollision() {
         (( ballY + ballRadius) > blocks[i].y)) {
             ballYDirection *= -1;
             blocksBroken += 1;
-            // ballspeed will increase every 10 blocks
             if (blocksBroken % 30 === 0 && blocksBroken != 0) {
                 ballSpeed += 1;
             }
